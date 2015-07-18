@@ -1,0 +1,59 @@
+#!/usr/bin/perl
+use LWP::Simple;
+use LWP::UserAgent;
+##############################################################################
+#I.C.S.G Subdomain Scanner                                                                                      #
+#                                                                            #
+#Coded By WH!T3 W01F                                                                                                                 #
+#                                                                                                                                                         #
+#Iran Cyber Security Group                                                                                                         #
+#                                                                                                                                                         #
+#Iran-Cyber.Org                                                                                                                             #
+#                                                                                                                                                         #
+#Spc Tnx: root3r | MOHAMAD-NOFOZI | KamraN HellisH | JOK3R | Pi.Hack                 #
+##############################################################################
+print q {
+ _____                          _____      _                   ____
+|_   _|                        / ____|    | |                 / __ \
+  | |  _ __ __ _ _ __  ______ | |    _   _| |__   ___ _ __   | |  | |_ __ __ _
+  | | | '__/ _` | '_ \|______|| |   | | | | '_ \ / _ \ '__|  | |  | | '__/ _` |
+  | |_| | | (_| | | | |       | |___| |_| | |_) |  __/ |  _  | |__| | | | (_| |
+|_____|_|  \__,_|_| |_|        \_____\__, |_.__/ \___|_| (_)  \____/|_|  \__, |
+                                      __/ |                                _/ |
+                                     |___/                               |___/
+
+};
+sleep(2);
+print "\n";
+print "\t   +=============================================================+\n";
+print "\t   |                   I.C.S.G Alexa Booster                     |\n";
+print "\t   |                     Author: WH!T3 W01F                      |\n";
+print "\t   |                       Iran-Cyber.Org                        |\n";
+print "\t   | Spc Tnx: root3r|MOHAMAD-NOFOZI|KamraN HellisH|JOK3R|Pi.Hack |\n";
+print "\t   +=============================================================+\n";
+print "\n\n\t Type Website Address [Example : http://www.Domain.com]";
+print "\n\t Site : ";
+chomp($site=<STDIN>);
+print "\n\n\t Name of Proxy list file [Example : Proxylist.txt]";
+print "\n\t Name : ";
+chomp($proxies=<STDIN>);
+print "\nProcessing ...\n\n";
+open (PROXIES, "<$proxies") || die "\n[-] Can't open the $proxies list !\n";
+@proxy=<PROXIES>;
+################################
+foreach $proxys(@proxy){
+chomp($proxys);
+$proxy='http://'.$proxys;
+$ua = LWP::UserAgent->new;
+$ENV{HTTP_proxy} = "$proxy";
+$ua->env_proxy;
+my $req = $ua->get("$site");
+$num==1;
+$num++;
+print "\t\t $num  =>  $proxys\n";
+my $req2 = get $site;
+next;
+}
+print "\nFinished.Exit !\n";
+close("PROXIES");
+exit;
