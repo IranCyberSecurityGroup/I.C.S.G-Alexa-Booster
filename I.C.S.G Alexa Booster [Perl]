@@ -2,7 +2,7 @@
 use LWP::Simple;
 use LWP::UserAgent;
 ##############################################################################
-#I.C.S.G Subdomain Scanner                                                   #
+#I.C.S.G Alexa Booster                                                       #
 #                                                                            #
 #Coded By WH!T3 W01F                                                         #
 #                                                                            #
