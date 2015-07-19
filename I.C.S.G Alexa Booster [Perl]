@@ -2,15 +2,15 @@
 use LWP::Simple;
 use LWP::UserAgent;
 ##############################################################################
-#I.C.S.G Subdomain Scanner                                                                                      #
+#I.C.S.G Subdomain Scanner                                                   #
 #                                                                            #
-#Coded By WH!T3 W01F                                                                                                                 #
-#                                                                                                                                                         #
-#Iran Cyber Security Group                                                                                                         #
-#                                                                                                                                                         #
-#Iran-Cyber.Org                                                                                                                             #
-#                                                                                                                                                         #
-#Spc Tnx: root3r | MOHAMAD-NOFOZI | KamraN HellisH | JOK3R | Pi.Hack                 #
+#Coded By WH!T3 W01F                                                         #
+#                                                                            #
+#Iran Cyber Security Group                                                   #
+#                                                                            #
+#Iran-Cyber.Org                                                              #
+#                                                                            #
+#Spc Tnx: root3r | MOHAMAD-NOFOZI | KamraN HellisH | JOK3R | Pi.Hack         #
 ##############################################################################
 print q {
  _____                          _____      _                   ____
